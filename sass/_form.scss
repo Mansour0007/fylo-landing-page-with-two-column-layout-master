@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  @media only screen and(max-width: 65.5em) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $Light-Gray;
+    padding: 1rem 7rem;
+    margin-right: 1.6rem;
+
+    @media only screen and (max-width: 56.25em) {
+      margin-right: 0;
+    }
+
+    &:focus {
+      outline: none;
+    }
+    &:focus:invalid {
+      box-shadow: 0 0 0 1px rgb(231, 57, 57);
+    }
+    &::-webkit-input-placeholder {
+      color: $Light-Gray;
+    }
+    &--cta {
+      width: 90%;
+      // margin-bottom: 2rem;
+    }
+  }
+}

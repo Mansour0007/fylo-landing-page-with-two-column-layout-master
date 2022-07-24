@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  /* font-size 10px */
+  /* 10px / 16px = 62.5%  */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  // @media only screen and (max-width: $bp-large) {
+  //   font-size: 50%;
+  // }
+
+  @media only screen and (max-width: 75em) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: 23.5em) {
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.container {
+  max-width: 144rem;
+  margin: 6.3rem auto;
+}
+ul {
+  list-style: none;
+}

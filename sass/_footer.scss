@@ -1,0 +1,76 @@
+.footer {
+  padding: 10rem 8rem;
+  background-color: $Very-Dark-Blue;
+  color: #fff;
+  font-size: 2rem;
+
+  &__wraper {
+    display: grid;
+    grid-template-columns: repeat(4, 40rem);
+    column-gap: 10rem;
+    row-gap: 1rem;
+
+    @media only screen and(max-width: 58.75em) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and(max-width: 31.25em) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__contact {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    &--phone {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10rem;
+    row-gap: 1rem;
+
+    @media only screen and(max-width: 31.25em) {
+      grid-template-columns: 1fr;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+
+    @media only screen and(max-width: 31.25em) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.phone-icon,
+.email-icon {
+  margin-right: 1rem;
+}
+.footer__link:link,
+.footer__link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.footer__link:hover,
+.footer__link:active {
+  color: $Bright-Blue;
+}
+
+.icon-hover:hover {
+  color: $Bright-Blue;
+}

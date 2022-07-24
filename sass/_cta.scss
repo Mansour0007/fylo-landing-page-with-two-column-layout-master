@@ -1,0 +1,29 @@
+.cta {
+  padding: 9rem 8rem;
+  background-color: $Desaturated-Blue;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+
+  @media only screen and(max-width: 58.75em) {
+    min-width: 375px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__text {
+    max-width: 55rem;
+    color: #fff;
+
+    @media only screen and(max-width: 58.75em) {
+      text-align: center;
+    }
+  }
+}
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
